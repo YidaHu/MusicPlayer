@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/dvj" android:duration="60"></item>
+    <item android:drawable="@mipmap/dvk" android:duration="60"></item>
+    <item android:drawable="@mipmap/dvl" android:duration="60"></item>
+    <item android:drawable="@mipmap/dvm" android:duration="60"></item>
+    <item android:drawable="@mipmap/dvn" android:duration="60"></item>
+    <item android:drawable="@mipmap/dvo" android:duration="60"></item>
+    <item android:drawable="@mipmap/dvp" android:duration="60"></item>
+    <item android:drawable="@mipmap/dvq" android:duration="60"></item>
+    <item android:drawable="@mipmap/dvr" android:duration="60"></item>
+    <item android:drawable="@mipmap/dvs" android:duration="60"></item>
+
+</animation-list>

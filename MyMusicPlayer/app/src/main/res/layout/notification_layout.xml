@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/notification_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light">
+
+    <ImageView
+        android:id="@+id/notification_artist_image"
+        android:layout_width="64.0dip"
+
+        android:layout_height="64.0dip"
+        android:background="@drawable/tip"/>
+
+    <TextView
+        android:id="@+id/notification_music_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5.0dp"
+        android:layout_toEndOf="@+id/notification_artist_image"
+        android:layout_toRightOf="@+id/notification_artist_image"
+        android:focusable="true"
+        android:text="歌曲名称"
+        android:textColor="#FFADABFF"
+        android:textSize="18sp"
+        />
+
+    <TextView
+
+        android:id="@+id/notification_music_Artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/notification_music_title"
+        android:layout_alignStart="@+id/notification_music_title"
+        android:layout_below="@id/notification_music_title"
+        android:layout_marginTop="5.0dip"
+        android:text="歌手"
+        android:textColor="#FFADABFF"
+        />
+
+    <ImageButton
+        android:id="@+id/notification_exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/notification_music_title"
+        android:background="@android:drawable/btn_dialog"/>
+
+    <ImageButton
+        android:id="@+id/notification_next_song_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/notification_exit_button"
+        android:layout_toStartOf="@+id/notification_exit_button"
+        android:background="@android:drawable/ic_media_next"
+        />
+
+    <ImageButton
+        android:id="@+id/notification_play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/notification_next_song_button"
+        android:layout_toStartOf="@id/notification_next_song_button"
+        android:background="@mipmap/skin_kg_ic_playing_bar_pause_default"/>
+
+    <ImageButton
+        android:id="@+id/notification_previous_song_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/notification_play_button"
+        android:layout_toStartOf="@id/notification_play_button"
+        android:background="@android:drawable/ic_media_previous"
+        />
+
+
+</RelativeLayout>
